@@ -69,7 +69,7 @@ object Main extends IOApp {
         .deepMerge(Json.obj("variables" -> Variables(name = "rick").asJson))
 
     for {
-      _ <- IO(logger.info("GraphGQ starts"))
+      _ <- IO(logger.info("GraphQL starts"))
 
       // query the schema
       schema <- GraphQlQuery.getSchema.asJson.exec
