@@ -1,6 +1,6 @@
 # Playing with GraphQL from Scala
 
-My experience with [GraphQL](https://graphql.org/) so fas hasn't been very
+My experience with [GraphQL](https://graphql.org/) so far hasn't been very
 good, so I decided to play a bit more with it without deadlines or having
 to actually accomplish anything.
 
