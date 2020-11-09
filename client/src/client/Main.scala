@@ -8,7 +8,7 @@ import graphql._, GraphQlQuery._
 
 // some case classes to process the responses
 case class Info(
-  count: Int
+    count: Int
 )
 
 case class CharactersResults(
