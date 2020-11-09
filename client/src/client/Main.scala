@@ -76,7 +76,7 @@ object Main extends IOApp {
       _ <- IO(logger.info(schema.toString()))
 
       // simple query
-      data <- charQuery.asJson.execAs[Data]
+      data <- charQuery.execAs[Data]
       _ <- IO {
         logger.info(s"records: ${data.characters.info}")
         data.characters.results
