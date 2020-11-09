@@ -7,7 +7,9 @@ import io.circe._, io.circe.generic.auto._, io.circe.syntax._
 import graphql._, GraphQlQuery._
 
 // some case classes to process the responses
-case class Info(count: Int)
+case class Info(
+  count: Int
+)
 
 case class CharactersResults(
     name: String,
@@ -35,9 +37,7 @@ object Main extends IOApp {
   def run(args: List[String]): IO[ExitCode] = {
 
     implicit val cli = new GraphQlClient(
-      "https://rickandmortyapi.com/graphql",
-      // this is needed by the service
-      Map("Origin" -> Seq("https://rickandmortyapi.com"))
+      "https://rickandmortyapi.com/graphql"
     )
 
     // simple query

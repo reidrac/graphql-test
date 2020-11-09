@@ -11,7 +11,7 @@ class QueryFailed(message: String) extends Exception(message)
 
 class GraphQlClient(
     endpoint: String,
-    headers: Map[String, Seq[String]],
+    headers: Map[String, Seq[String]] = Map(),
     timeout: Duration = 10.seconds
 )(
     implicit ec: ExecutionContext = ExecutionContext.global,
