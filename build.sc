@@ -1,6 +1,6 @@
 // build.sc
 import mill._, scalalib._, scalafmt._
-import $ivy.`com.goyeau::mill-scalafix:0.1.4`
+import $ivy.`com.goyeau::mill-scalafix:0.1.5`
 import com.goyeau.mill.scalafix.ScalafixModule
 
 object client extends ScalaModule with ScalafmtModule with ScalafixModule {
